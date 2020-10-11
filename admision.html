@@ -49,24 +49,28 @@
         <!--aca puede ir algo xD-->
       </div>
       <div class="col-md-8 order-md-1">
-        <form class="needs-validation" novalidate="">
+        <form class="needs-validation">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="firstName">Nombre</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,}" required>
             </div>
             <div class="col-md-6 mb-3">
               <label for="lastName">Apellidos</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,} [a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,}" required>
             </div>
           </div>
           <div class="mb-3">
+            <label for="rut">Rut</label>
+            <input type="text" class="form-control" id="rut" placeholder="11.111.111-1" pattern="^(\d{1,3}(?:\.\d{1,3}){2}-[\dkK])$" required>
+          </div>
+          <div class="mb-3">
             <label for="email">Correo electrónico</label>
-            <input type="email" class="form-control" id="email" placeholder="tunombre@ejemplo.com">
+            <input type="email" class="form-control" id="email" placeholder="tunombre@ejemplo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
           </div>
           <div class="mb-3">
             <label for="phone">Teléfono</label>
-            <input type="text" class="form-control" id="phone" placeholder="987654321" required="">
+            <input type="tel" class="form-control" id="phone" placeholder="987654321" pattern="[0-9]{9}" required>
           </div>
           <div class="row">
             <div class="col-md-6 mb-3">

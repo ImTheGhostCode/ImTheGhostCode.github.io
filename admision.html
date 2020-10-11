@@ -1,83 +1,169 @@
 <!DOCTYPE html>
-<html lang="es-419">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-
-    <!-- Tailwind CSS -->
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
-    <!-- Estilos propios -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera Evaluación Aplicaciones Web</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Agency Page Template</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-
-    <header class="bg-black overflow-hidden md:h-32">
-        <div class="w-full">
-            <a href="index.html"><img src="img/logo-blanco.png" alt="Logo Inacap" class="md:float-left logo-inacap md:pl-4 md:pt-4 w-full mx-auto pt-4 pb-2"></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark cabecera"> <a class="navbar-brand col-6 col-xs-6 col-sm-6 "
+      href="#"><img src="images/logo-blanco.png" width="150px"></a>
+    <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+        class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="nosotros.html">Nosotros</a> </li>
+        <li class="nav-item active"> <a class="nav-link" href="admision.html">Admisión <span
+          class="sr-only">(current)</span></a> </li>
+      </ul>
+    </div>
+  </nav>
+  <!--banner admision-->
+  <div class="jumbotron banner-admision">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Admisión</h1>
+          <p class="text-center">Proceso de admisión 2021&nbsp;</p>
         </div>
-        <nav class="text-gray-200 md:float-right h-full mx-auto py-2 md:my-0 md:pr-4">
-            <ul class="text-2xl text-center flex h-full justify-center">
-                <li class="mx-4 my-auto"><a href="index.html">Home</a></li>
-                <li class="mx-4 my-auto"><a href="nosotros.html">Nosotros</a></li>
-                <li class="mx-4 my-auto"><a href="admision.html">Admisión</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="banner-matriculate w-full bg-no-repeat bg-cover bg-top flex">
-        <div class="w-full mt-6 md:mr-6">
-            <div class="flex w-full">
-                <div class="border border-gray-700 m-4 bg-gray-300 sm:w-6/12 md:w-5/12 lg:w-4/12 xl:w-4/12 sm:float-right md:float-right rounded-lg">
-                    <form action="index.html" method="post" class="uppercase px-4 pt-4">
-
-                        <label for="username" class="my-2">Indicanos tu nombre y apellidos</label>
-                        <input required type="text" id="username" name="username" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,} [a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,} [a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,}" placeholder="Nombre Apellido Paterno Apellido Materno" class="appearance-none border-gray-900 bg-transparent border-b w-full text-gray-700 mr-3 py-1 mb-2 leading-tight focus:outline-none placeholder-gray-800">
-
-                        <label for="rut" class="my-2">Indicanos tu rut</label>
-                        <input required type="text" id="rut" name="rut" pattern="^(\d{1,3}(?:\.\d{1,3}){2}-[\dkK])$" placeholder="11.111.111-1" class=" appearance-none border-gray-900 bg-transparent border-b w-full text-gray-700 mr-3 py-1 mb-2 leading-tight focus:outline-none placeholder-gray-700">
-
-                        <label for="rut" class="my-2">Indicanos tu correo eléctronico</label>
-                        <input required type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="tunombre@dominio.com" class=" appearance-none border-gray-900 bg-transparent border-b w-full text-gray-700 mr-3 py-1 mb-2 leading-tight focus:outline-none placeholder-gray-700">
-
-                        <label for="phone" class="my-2">Indicanos tu número de teléfono</label>
-                        <input required type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="987654321" class=" appearance-none border-gray-900 bg-transparent border-b w-full text-gray-700 mr-3 py-1 mb-2 leading-tight focus:outline-none placeholder-gray-700">
-                        
-                        <div class="relative">
-                            <label for="carrera" class="my-2">Elige una carrera</label>
-                            <select name="carrera" id="carrera" class="appearance-none border-gray-900 bg-transparent border-b w-full text-gray-700 mr-3 py-1 mb-2 leading-tight focus:outline-none placeholder-gray-800">
-                                <option value="0">Seleccione una opción</option>
-                                <option value="Analista Programador">Analista Programador</option>
-                                <option value="Contabilidad General">Contabilidad General</option>
-                            </select>
-                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pt-4">
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                                </div>
-                        </div>
-
-                        <div class="relative">
-                            <label for="sede" class="my-2">Selecciona una de nuestras sedes</label>
-                            <select name="sede" id="sede" class="appearance-none border-gray-900 bg-transparent border-b w-full text-gray-700 mr-3 py-1 mb-2 leading-tight focus:outline-none placeholder-gray-800">
-                                <option value="0">Seleccione una opción</option>
-                                <option value="Santiago Centro">Santiago Centro</option>
-                                <option value="San Joaquin">San Joaquin</option>
-                            </select>
-                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pt-4">
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                                </div>
-                        </div>
-
-                        <div class="text-center mt-1 mb-2">
-                            <button class="text-gray-100 p-2 uppercase rounded w-5/12" type="submit" onclick="" style="background-color: #ff5100;">
-                                Siguiente
-                            </button>
-                        </div>
-                    </form>
-                </div>
+      </div>
+    </div>
+  </div>
+  <!--formulario de admision-->
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Formulario de Admisión</h2>
+      <p class="lead">Dejanos tus datos y te contactaremos</p>
+    </div>
+    <div class="row">
+      <div class="col-md-2  mb-2">
+        <!--aca puede ir algo xD-->
+      </div>
+      <div class="col-md-8 order-md-1">
+        <form class="needs-validation" novalidate="">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">Nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
             </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Apellidos</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="tunombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="phone">Teléfono</label>
+            <input type="text" class="form-control" id="phone" placeholder="987654321" required="">
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="country">Carrera</label>
+              <select class="custom-select d-block w-100" id="country" required="">
+                <option value="">Escoger...</option>
+                <option>Analista Programador</option>
+                <option>Contador General</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="sede">Sede</label>
+              <select class="custom-select d-block w-100" id="sede" required="">
+                <option value="">Escoger...</option>
+                <option>Santiago Centro</option>
+                <option>San Joaquin</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="text-center">
+            <button class="btn btn-primary btn-lg" type="submit">Enviar Datos</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-2 mb-2">
+      <!--aca puede ir algo xD-->
+    </div>
+    <br>
+    <br>
+  </div>
+  <!--pie de página-->
+  <footer class="text-white pie-pagina">
+    <div class="section "> <br>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-12"> <img src="images/logo-blanco.png" width="150px;"> <br>
+            <br>
+            <p>long established fact that a reader will be distracted by the readable content by the readable content
+              established fact that</p>
+            <span class="social-icons "> <a href="https://facebook.com/"
+                class="fa fa-facebook text-white"></a>&nbsp;&nbsp; <a href="https://twitter.com/"
+                class="fa fa-twitter text-white"></a>&nbsp;&nbsp; <a href="https://linkedin.com"
+                class="fa fa-linkedin text-white"></a>&nbsp;&nbsp; <a href="https://instagram.com/"
+                class="fa fa-instagram text-white"></a>&nbsp;&nbsp; <a href="https://youtube.com/"
+                class="fa fa-youtube-play text-white"></a> </span>
+          </div>
+          <div class="col-md-3 col-12">
+            <h3>Link</h3>
+            <p> Careers<br>
+              Directory<br>
+              Contacts<br>
+              Academic Calendar<br>
+              Maps y Directions<br>
+              Parking y Transportation<br>
+              Emergency </p>
+          </div>
+          <div class="col-md-3 col-12">
+            <h3>Más info</h3>
+            <address>
+              <a class="fa fa-map-marker"> </a><strong> Casa Central </strong><br>
+              Av. Vitacura 10.151, Vitacura, Santiago - Chile<br>
+              <a class="fa fa-phone"> </a> 800 20 25 20<br>
+              <a class="fa fa-envelope"> </a> contato@inacap.cl
+            </address>
+          </div>
+          <div class="col-md-3 col-12">
+            <h3>Suscríbete</h3>
+            <p>Suscríbete a nuestras últimas noticias para estar actualizado, ¡prometemos no enviar spam!</p>
+            <form>
+              <div class="form-group col-12" style="margin:0px;padding:0px;">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="tunombre@ejemplo.com">
+                <button type="submit" class="btn btn-dark mt-2">Suscríbete</button>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container text-center ">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © Belén Morales Silva y Exequiel Oviedo Aqueveque.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
 </body>
+
 </html>

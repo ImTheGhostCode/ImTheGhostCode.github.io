@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+/*cabecera*/
+.cabecera {
+  background-color: #000000 !important;
+}
+/*banner*/
+.banner-principal {
+  background-image: url("../images/banner-principal.jpg");
+  padding: 18rem 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+.banner-principal h1 {
+  font-size: 3.5em;
+}
+.banner-principal h3 {
+  font-size: 2.0em;
+  font-weight: 300
+}
+.banner-nosotros {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("../images/banner3.jpg");
+  padding: 10rem 2rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+.banner-inicio {
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("../images/banner2.jpg");
+  background-attachment: fixed;
+  background-position: 50% -25px;
+  padding: 10rem 2rem;
+}
+.banner-admision {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/slider-1-1920x794.jpg");
+  background-attachment: fixed;
+  background-position: 50% -25px;
+  padding: 10rem 2rem;
+  color: #ffffff;
+}
+/*formulario de admision*/
+.formulario-admision-inicio {
+  padding: 0px;
+}
+.formulario-admision-inicio > div {
+  padding: 5%;
+}
+.formulario-admision-inicio > .card-header {
+  background: #cc0000;
+  color: #ffffff;
+}
+/*pie de página*/
+.pie-pagina {
+  background-color: #1c273b;
+}
+a.fa {
+  padding-right: 10px;
+  font-size: 1.4em;
+}
+a.fa.fa-envelope {
+  font-size: 1.1em;
+}
+/*botones*/
+.boton {
+  background-color: #cc0000;
+  border: none;
+}
+/*media query*/
+@media screen and (min-width:0px) and (max-width:600px) {
+  .banner-principal {
+    padding: 10rem 2rem;
+  }
+}

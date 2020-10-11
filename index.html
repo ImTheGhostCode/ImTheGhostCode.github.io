@@ -1,29 +1,302 @@
 <!DOCTYPE html>
-<html lang="es-419">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-
-    <!-- Tailwind CSS -->
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
-    <!-- Estilos propios -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera Evaluación Aplicaciones Web</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Agency Page Template</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header class="bg-black overflow-hidden md:h-32">
-        <div class="w-full">
-            <a href="index.html"><img src="img/logo-blanco.png" alt="Logo Inacap" class="md:float-left logo-inacap md:pl-4 md:pt-4 w-full mx-auto pt-4 pb-2"></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark cabecera"> <a class="navbar-brand col-6 col-xs-6 col-sm-6 "
+      href="#"><img src="images/logo-blanco.png" width="150px"></a>
+    <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+        class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">Inicio <span
+              class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="nosotros.html">Nosotros</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="admision.html">Admisión</a> </li>
+      </ul>
+    </div>
+  </nav>
+  <!--banner-->
+  <header>
+    <div class="jumbotron banner-principal">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center">Admisión 2021</h1>
+            <h3 class="text-center">Matriculate online desde el 13 de octubre</h3>
+            <p class="text-center"><a class="btn btn-primary btn-lg boton" href="#" role="button">VER AHORA</a> </p>
+          </div>
         </div>
-        <nav class="text-gray-200 md:float-right h-full mx-auto py-2 md:my-0 md:pr-4">
-            <ul class="text-2xl text-center flex h-full justify-center">
-                <li class="mx-4 my-auto"><a href="index.html">Home</a></li>
-                <li class="mx-4 my-auto"><a href="nosotros.html">Nosotros</a></li>
-                <li class="mx-4 my-auto"><a href="admision.html">Admisión</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </div>
+  </header>
+  <br>
+  <!--noticias-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-12">
+        <div class="row">
+          <div class="col-sm-6 col-12">
+            <div class="card"> <img class="card-img-top" src="images/noticia1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary boton">Ver noticia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12">
+            <div class="card"> <img class="card-img-top" src="images/noticia2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary boton">Ver noticia</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-12">
+            <div class="card"> <img class="card-img-top" src="images/noticia3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary boton">Ver noticia</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12">
+            <div class="card"> <img class="card-img-top" src="images/noticia4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary boton">Ver noticia</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="col-lg-4 col-12">
+        <div class="row mx-0">
+          <div class="col-12 card bg-light mx-auto formulario-admision-inicio">
+            <h3 class="text-center card-header">Admisión 2021</h3>
+            <div>
+              <form class="card-body">
+                <div class="form-group row">
+                  <label for="location1" class="col-form-label">Carrera</label>
+                  <select class="form-control" name="location" id="carrera">
+                    <option value="">Administración y Negocios</option>
+                    <option value="">Agroindustria y medios ambiente</option>
+                    <option value="">Automátización y robotica</option>
+                    <option value="">Construcción</option>
+                  </select>
+                </div>
+                <div class="form-group row">
+                  <label for="location1" class="col-form-label">Sede</label>
+                  <select class="form-control" name="sede" id="location2">
+                    <option value="">INACAP Apoquindo</option>
+                    <option value="">INACAP Maipú</option>
+                    <option value="">INACAP Renca</option>
+                    <option value="">INACAP Ñuñoa</option>
+                    <option value="">INACAP Santiago Centro</option>
+                    <option value="">INACAP Santiago Sur</option>
+                    <option value="">INACAP Puente Alto</option>
+                  </select>
+                </div>
+                <div class="form-group row">
+                  <label for="location1" class="col-form-label">Modalidad</label>
+                  <select class="form-control" name="modalidad" id="modalidad">
+                    <option value="">Diurno</option>
+                    <option value="">Vespertino</option>
+                    <option value="">Online</option>
+                  </select>
+                </div>
+                <p class="text-center"><a href="#" class="btn btn-danger boton" role="button">Buscar </a></p>
+              </form>
+            </div>
+          </div>
+          <div class="col-12">
+            <h3 class="text-center">Testimonios</h3>
+            <hr>
+            <div class="media"> <img class="mr-3" src="images/user1.png" alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">Emilly Blunt <span class="	fa fa-star"></span> <span class="fa fa-star"></span><span
+                    class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore.</p>
+              </div>
+            </div>
+            <div class="media mt-2"> <img class="mr-3" src="images/user2.png" alt="Generic placeholder image">
+              <div class="media-body">
+                <h5 class="mt-0">Linda Smith <span class="fa fa-star"></span><span class="fa fa-star"></span><span
+                    class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!--banner2-->
+  <section>
+    <div class="jumbotron banner-inicio">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-md-8 col-12 mx-auto">
+            <h1>Diplomados y Cursos de Educación Continua</h1>
+            <h3>Concoce nuestros diplomados 100% online</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-auto mx-auto"> <a class="btn btn-block btn-lg btn-success boton" href="#"
+              title="">Más información</a> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--cursos-->
+  <section>
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-2 text-center">
+          <h3>EMPIECE A APRENDER AHORA</h3>
+          <h1>CURSOS POPULARES</h1>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4"> <img src="images/curso1.jpg" width="100%">
+          <h3>Feature Description</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt impedit est voluptatem doloremque
+            architecto corporis suscipit quidem ratione! Quis laborum nam optio dolorem doloremque ex nobis quibusdam ad
+            quo dolores? </p>
+          <p><a class="btn btn-link" href="http://www.adobe.com">View details »</a></p>
+        </div>
+        <div class="col-sm-6 col-lg-4"> <img src="images/curso2.jpg" width="100%">
+          <h3>Feature Description</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, illo, libero esse assumenda culpa
+            consequatur exercitationem beatae odio praesentium nihil iste ipsum reiciendis pariatur. Recusandae,
+            reiciendis quidem eaque aut ab. </p>
+          <p><a class="btn btn-link" href="http://www.adobe.com">View details »</a></p>
+        </div>
+        <div class="col-sm-6 col-lg-4"> <img src="images/curso3.jpg" width="100%">
+          <h3>Feature Description</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, adipisci recusandae veniam
+            laudantium distinctio temporibus eveniet dolorum earum iusto veritatis provident ducimus minima dolore quas
+            vel omnis cumque voluptas quibusdam.</p>
+          <p><a class="btn btn-link" href="http://www.adobe.com">View details »</a></p>
+        </div>
+        <div class="col-sm-6 col-lg-4"> <img src="images/curso4.jpg" width="100%">
+          <h3>Feature Description</h3>
+          <p> <em class="icon-desktop "></em> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, earum rem
+            nostrum provident repellat inventore laborum deleniti quas facere Quasi impedit autem qui cupiditate modi
+            vero vitae dolorum nisi explicabo ea dolores animi. Inventore, omnis.</p>
+          <p><a class="btn btn-link" href="http://www.adobe.com">View details »</a></p>
+        </div>
+        <div class="col-sm-6 col-lg-4"> <img src="images/curso5.jpg" width="100%">
+          <h3>Feature Description</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, iure, perspiciatis, ab ad quia animi
+            esse repudiandae tempore quisquam dolorem sequi voluptatum qui fugiat. Quasi impedit autem qui cupiditate
+            iusto?</p>
+          <p><a class="btn btn-link" href="http://www.adobe.com">View details »</a></p>
+        </div>
+        <div class="col-sm-6 col-lg-4"> <img src="images/curso6.jpg" width="100%">
+          <h3>Feature Description</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, aut, hic laudantium reprehenderit sapiente
+            nemo consequatur corrupti accusantium! Hic, non rerum nihil reprehenderit excepturi explicabo error tempore
+            aliquam eveniet odit.</p>
+          <p><a class="btn btn-link" href="http://www.adobe.com">View details »</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--pie de página-->
+  <footer class="text-white pie-pagina">
+    <div class="section "> <br>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-12"> <img src="images/logo-blanco.png" width="150px;"> <br>
+            <br>
+            <p>long established fact that a reader will be distracted by the readable content by the readable content
+              established fact that</p>
+            <span class="social-icons "> <a href="https://facebook.com/"
+                class="fa fa-facebook text-white"></a>&nbsp;&nbsp; <a href="https://twitter.com/"
+                class="fa fa-twitter text-white"></a>&nbsp;&nbsp; <a href="https://linkedin.com"
+                class="fa fa-linkedin text-white"></a>&nbsp;&nbsp; <a href="https://instagram.com/"
+                class="fa fa-instagram text-white"></a>&nbsp;&nbsp; <a href="https://youtube.com/"
+                class="fa fa-youtube-play text-white"></a> </span>
+          </div>
+          <div class="col-md-3 col-12">
+            <h3>Link</h3>
+            <p> Careers<br>
+              Directory<br>
+              Contacts<br>
+              Academic Calendar<br>
+              Maps y Directions<br>
+              Parking y Transportation<br>
+              Emergency </p>
+          </div>
+          <div class="col-md-3 col-12">
+            <h3>Más info</h3>
+            <address>
+              <a class="fa fa-map-marker"> </a><strong> Casa Central </strong><br>
+              Av. Vitacura 10.151, Vitacura, Santiago - Chile<br>
+              <a class="fa fa-phone"> </a> 800 20 25 20<br>
+              <a class="fa fa-envelope"> </a> contato@inacap.cl
+            </address>
+          </div>
+          <div class="col-md-3 col-12">
+            <h3>Suscríbete</h3>
+            <p>Suscríbete a nuestras últimas noticias para estar actualizado, ¡prometemos no enviar spam!</p>
+            <form>
+              <div class="form-group col-12" style="margin:0px;padding:0px;">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="tunombre@ejemplo.com">
+                <button type="submit" class="btn btn-dark mt-2">Suscríbete</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container text-center ">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © Belén Morales Silva y Exequiel Oviedo Aqueveque.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
 </body>
+
 </html>

@@ -16,12 +16,21 @@ body {
     background-color: #000000 !important;
 }
 
+/*fixed*/
+.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
 
 /*banner*/
 
 .banner-principal {
     background-image: url("../images/banner-principal.jpg");
-    padding: 18rem 2rem;
+    height: 90vh;
+    min-height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,6 +45,12 @@ body {
 .banner-principal h3 {
     font-size: 2.0em;
     font-weight: 300
+}
+
+.info-oculta {
+    text-align: center;
+    font-size: 2rem;
+    display: none;
 }
 
 .banner-nosotros {

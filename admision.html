@@ -28,10 +28,9 @@
         class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="nosotros.html">Nosotros</a> </li>
-                <li class="nav-item active"> <a class="nav-link" href="admision.html">Admisión <span
-          class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item active"><a class="nav-link" href="admision.html">Admisión</a></li>
             </ul>
         </div>
     </nav>
@@ -61,11 +60,11 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Nombre</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,}" required>
+                            <input type="text" class="form-control" id="firstName" minlength="4" placeholder="Ingresa tu nombre" value="" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,}" required>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="lastName">Apellidos</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,} [a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,}" required>
+                            <label for="lastName">Apellido</label>
+                            <input type="text" class="form-control" id="lastName" minlength="4" placeholder="Ingresa tu apellido" value="" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,} [a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,}" required>
                         </div>
                     </div>
                     <div class="mb-3">
@@ -171,6 +170,9 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/jquery.rut.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
